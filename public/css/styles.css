@@ -1,0 +1,300 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:any-link{
+
+    color: black;
+    text-decoration: none;
+}
+header {
+    background-color: #EAC926;
+    font-size: 12px;
+}
+.contenedorh1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.contenedorh2{
+    position: relative;
+    width: 50%;
+    padding: 5px;
+}
+.productos{
+    width: 100%;
+}
+.burger-menu {
+background-color: #1259c3;
+color: white;
+    padding: 5px;
+    border: #666 solid 1px; 
+    border-radius: 10%;
+width: min-content;
+margin-left: 150px;
+}
+
+.barra-de-busqueda {
+    background-color: white;
+    color: #666;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: min-content;
+  right:5%;
+  align-items: center;
+  text-overflow: ellipsis;
+  position: absolute;
+  
+  
+}
+.navegacion{
+    text-decoration: none;
+    color: black;
+}
+.lupa {
+    width: min-content;
+    height: min-content;
+    position: relative;
+    left: 90%;
+    top: 8px;
+
+}
+
+
+.logo {
+    width: 50%;
+    padding: 5%;
+}
+.banner {
+    width: 100%;
+    margin: 0;
+}
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ebebeb ;
+}
+
+h3{
+    font-size: 24px;
+    
+}
+article i{
+    color: #39b54a;
+    border: #39b54a solid 1px;
+    border-radius: 100%;
+    padding: 10px;
+    margin-bottom: 1px;
+    position: absolute;
+    top: -15px;
+    right: 20px ;
+    background-color: #FFF;
+    font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+}
+
+@keyframes truck {
+    0%{
+        transition: rotate(0deg);
+    }
+    100%{
+        transition: rotate(90deg);
+    }
+    }
+article i:hover{
+    animation-name: truck;
+}
+
+
+article{
+    font-size: 16px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: white;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.detalle{
+    border-top: 1px solid #ebebeb;
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.precioflex{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+}
+.precios{
+    font-size: 18px;
+    display: flex;
+    flex-grow: 0.3;
+}
+.descuento{
+    color: #39b54a;
+    display: flex;
+}
+.centrado{
+    text-align: center;
+
+}
+li{
+    font-size: 12px;
+list-style: none;
+margin: 10px;}
+
+footer section {
+   padding: 10px;
+   display: block;
+   
+}
+
+section {
+    text-align: center;
+    font-weight: bold;
+        display: block;
+        justify-content: space-between;
+
+}
+footer i{
+
+    font-size: 2em;
+}
+footer i:hover{
+    color: #0022AA ;
+}
+.iconfoot {
+    margin-bottom: 10px;
+    color: #1259c3;
+    justify-content: center;
+   
+}
+h4 {
+    size: 12px;
+    color: #666;
+    font-weight: 1000;
+}
+p {
+    size: 10px;
+    color: #666;
+    font-weight: 100;
+    
+}
+    
+
+
+.site-bar{
+    display: none;
+    justify-content: left;
+    margin: 5px;
+
+}
+
+.login-bar{
+    display: none;
+    justify-content: right;
+    margin: 5px;
+}
+.descripcion {
+padding: 10px;
+text-align: left;
+display: none;
+order: 10;
+
+}
+
+
+
+@media (min-width:361px){
+    /*tablets*/
+    .navegacion {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    article:hover{
+
+        .descripcion {
+            display: block;
+            }
+    }
+        .site-bar{
+            display: flex;
+            width: 50%;
+            
+flex-grow: 0.5;            
+        }
+        .login-bar{
+        display: flex;
+flex-grow: 0.5;    }
+    .burger-menu{
+        display: none
+    }
+    section {
+        display: flex;  
+        flex-wrap: wrap;
+        
+        
+    }
+    .iconfoot{
+        max-width: 48%;
+    }
+    
+    article{
+        width: 48%;
+    }
+    .foot{
+        
+        display: flex
+        
+    }
+};
+@media (min-width: 769px){
+    /*laptop*/
+    .descripcion {
+        display: block;
+        }
+    .site-bar{
+        display: flex;
+        width: 50%;
+    }
+    .login-bar{
+        display: block
+    }
+    .burger-menu{
+        display: none
+    }
+    .contenedorh1 {
+        display: flex;
+        align-items: center;
+    }
+    section {
+        display: flex;  
+        flex-wrap: wrap;
+        
+    }
+    
+        article{
+        width: 23%;
+    }
+}
+

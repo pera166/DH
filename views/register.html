@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cbc041f78e.js" crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    
+    <form action="/register" method="post">
+       <div><div>
+        <label for="nombreYApellido"></label>
+        <input minlength="2" type="text" name="nombreYApellido" placeholder="Nombre y Apellido">
+    </div><div>
+        <label for="usuario"></label>
+        <input type="text" name="usuario" placeholder="Nombre de usuari@">
+        
+    </div><div>
+        <label for="Email"></label>
+        <input type="email" name="Email" placeholder="Email">
+        
+    </div><div>
+        <label for="fechaNacimiento">Fecha de nacimiento</label>
+    </div><div> 
+        <input type="date" name="fechaNacimiento">
+        
+    </div><div>
+        <label for="Domicilio"></label>
+        <input type="text" name="Domicilio" placeholder="Domicilio">
+        
+    </div><div>
+        <label for="perfil">Perfil del usuario </label>
+    </div><div>
+        <label for="comprador"></label>
+        <select name="perfil" id="perfil">
+        <option value="comprador">Quiero Comprar</option>
+        <option value="vendedor">Quiero Vender</option>
+        </select>
+        </div>
+        <div>
+        <label for="categoriasInteres">Categorías de interés (puede elegir más de una)</label></div>
+        
+            <ul><input type="checkbox" name="categoriasInteres" value="electro">
+        <label for="electro">Electro</label></ul>
+<ul>            <input type="checkbox" name="categoriasInteres" value="moda">
+            <label for="moda">moda</label></ul>
+<ul>                <input type="checkbox" name="categoriasInteres" value="hogar">
+                <label for="hogar">hogar</label></ul>
+<ul>                    <input type="checkbox" name="categoriasInteres" value="jugueteria">
+                    <label for="jugueteria">jugueteria</label></ul>
+<ul>                        <input type="checkbox" name="categoriasInteres" value="vidaSana">
+                          <label for="vidaSana">vida Sana</label></ul>
+        
+                        <div>
+        <label for="foto">Foto de usuario</label>
+        <input type="file" name="foto" accept=".jpg" >
+      
+    </div><div>
+        <label for="password"></label>
+        <input type="password" name="password" placeholder="Contraseña">
+            </div>
+    <div>
+        <label for="passwordRepeat"></label>
+        <input type="password" name="passwordRepeat" placeholder="Confirmar Contraseña">
+        
+    </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+    
+
+    
+</body>
+</html>
