@@ -208,7 +208,9 @@ p {
     margin: 5px;
 
 }
-
+.mensajeCompra{
+    padding: 5px;
+}
 .login-bar{
     display: none;
     justify-content: right;
@@ -267,18 +269,16 @@ flex-grow: 0.5;    }
         display: flex
         
     }
-};
-@media (min-width: 769px){
+}
+@media (min-width:769px){
     /*laptop*/
-    .descripcion {
-        display: block;
-        }
+    
     .site-bar{
         display: flex;
         width: 50%;
     }
     .login-bar{
-        display: block
+        display: flex
     }
     .burger-menu{
         display: none
@@ -296,5 +296,15 @@ flex-grow: 0.5;    }
         article{
         width: 23%;
     }
+    article:hover{
+
+        .descripcion {
+            display: block;
+            }
+    }
+    .iconfoot{
+        max-width: 23%;
+    }
+    
 }
 
